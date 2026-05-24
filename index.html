@@ -1,174 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio developer yang berfokus pada pembuatan website modern, game interaktif, aplikasi, dan asset digital berkualitas.">
-  <meta name="keywords" content="portfolio, web developer, game developer, app developer, html css javascript, ui design, asset creator">
-  <meta name="author" content="NanszDev">
-  <title>NanszDev | Portofolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="favicon.png" type="image/png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-</head>
-<body>
-  
-  <nav id="navbar">
-    <button class="menu-btn" onclick="toggleSidebar()">
-    <i class="fas fa-bars"></i>
-    </button>
-    <h3>NanszDev</h3>
-  </nav>
-  
-  <div id="mySidebar" class="sidebar">
-    <a id="home" class="activer" href="#" onclick="aktif(this)"><i class="fas fa-home"></i> Home</a>
-    <a id="about" href="#" onclick="aktif(this)"><i class="fas fa-circle-info"></i> About</a>
-    <a id="skill" href="#" onclick="aktif(this)"><i class="fas fa-cogs"></i> Skill</a>
-    <a id="project" href="#" onclick="aktif(this)"><i class="fas fa-folder-open"></i> Project</a>
-    <a id="feedback" href="#" onclick="aktif(this)"><i class="fas fa-comments"></i> Feedback</a>
-    <a id="contact" href="#" onclick="aktif(this)"><i class="fas fa-comments"></i> Contact</a>
-  </div>
-  <br>
-  <section class="home">
-      <h2><i class="fas fa-home"></i> Selamat Datang Di NanszDev</h2>
-      <p>Selamat datang di portofolio saya, portofolio ini berisi beberapa proyek yang pernah saya kerjakan,
-    mulai dari website landing page, dashboard, UI modern, hingga sistem
-    interaktif berbasis web. Saya siap membantu mewujudkan ide digital
-    menjadi website yang menarik dan fungsional.</p>
-      <br>
-      <div class="btn">
-        <a href="#" class="feed">Umpan balik</a>
-        <a href="#" class="myabout">Tentang saya</a>
-      </div>
-      <br>
-  </section>
-  <div id="mainContent" class="content">
-    <br>
-    <section class="about">
-      <h2><i class="fas fa-circle-info"></i> Tentang</h2>
-      <p>Halo, Nama saya Nanang Prayoga, saya adalah seorang pengembang web yang fokus membuat tampilan website
-    modern, responsif, dan interaktif. Saya memiliki pengalaman dalam
-    menggunakan HTML, CSS, JavaScript, serta berbagai teknologi frontend
-    untuk menciptakan pengalaman pengguna yang nyaman dan menarik.</p>
-      <p> Dalam setiap proyek, saya selalu mengutamakan desain yang bersih,
-    performa yang optimal, dan detail visual yang profesional. Saya juga
-    senang mempelajari teknologi baru untuk terus meningkatkan kualitas
-    hasil kerja dan kemampuan pengembangan web.</p>
-    </section>
-    <br>
-    <div class="skill">
-      <h2><i class="fas fa-cogs"></i> Kemampuan saya</h2>
-      <p>Saya memiliki kemampuan dalam pengembangan website menggunakan
-    HTML, CSS, dan JavaScript untuk membuat tampilan modern,
-    responsif, dan interaktif.</p>
-    <div class="cardsave">
-            <div class="card">
-        <i class="fa-brands fa-html5" style="color: #ff4a4a;"></i>
-        <p>HTML (HyperText Markup Language) adalah bahasa markah standar yang digunakan untuk membuat dan menyusun struktur sebuah halaman website</p>
-      </div>
-      <div class="card">
-        <i class="fa-brands fa-css3-alt" style="color: #4a5dff;"></i>
-        <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mendesain, mengatur gaya, dan mempercantik tampilan visual dokumen (seperti halaman web) yang ditulis dalam bahasa markup seperti HTML.</p>
-      </div>
-      
-      <div class="card">
-        <i class="fa-brands fa-js" style="color: #ffe24a;"></i>
-        <p>JavaScript adalah bahasa pemrograman tingkat tinggi yang digunakan untuk membuat halaman web menjadi lebih dinamis dan interaktif</p>
-      </div>
-      
-      <div class="card">
-        <i class="fa-brands fa-python" style="color: #3776AB;"></i>
-        <p>Python adalah bahasa pemrograman tingkat tinggi yang serbaguna, populer, dan mudah dipelajari. Dikenal karena sintaksnya yang bersih dan mirip bahasa manusia,</p>
-      </div>
-    </div>
-    </p>
-    <br>
-    <section class="project">
-      <h2><i class="fas fa-folder-open"></i> Proyek Saya</h2>
-      <div class="contain">
-        <div class="item">
-          <img src="game.png" alt="none">
-          <h3>item 1</h3>
-          <p>Saya membuat game dengan tampilan menarik dan gameplay interaktif
-    menggunakan teknologi modern. Fokus saya adalah menciptakan
-    pengalaman bermain yang seru, responsif, dan dapat dimainkan
-    di berbagai perangkat.</p>
-          <br>
-          <a href="#">Unduh File</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio developer yang berfokus pada pembuatan website modern, game interaktif, aplikasi, dan asset digital berkualitas."
+        />
+        <meta
+            name="keywords"
+            content="portfolio, web developer, game developer, app developer, html css javascript, ui design, asset creator"
+        />
+        <meta name="author" content="NanszDev" />
+        <meta property="og:title" content="Portfolio Nanang" />
+        <meta
+            property="og:description"
+            content="Portfolio developer yang berfokus pada pembuatan website modern, game interaktif, aplikasi, dan asset digital berkualitas."
+        />
+        <meta
+            property="og:image"
+            content="https://nanszdev.github.io/Portofolio/favicon.png"
+        />
+        <meta property="og:url" content="https://nanszdev.github.io/" />
+        <title>NanszDev | Portofolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="favicon.png" type="image/png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        />
+    </head>
+    <body>
+        <nav id="navbar">
+            <button class="menu-btn" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h3>NanszDev</h3>
+        </nav>
+
+        <div id="mySidebar" class="sidebar">
+            <a id="home" class="activer" href="#" onclick="aktif(this)"
+                ><i class="fas fa-home"></i> Home</a
+            >
+            <a id="about" href="#" onclick="aktif(this)"
+                ><i class="fas fa-circle-info"></i> About</a
+            >
+            <a id="skill" href="#" onclick="aktif(this)"
+                ><i class="fas fa-cogs"></i> Skill</a
+            >
+            <a id="project" href="#" onclick="aktif(this)"
+                ><i class="fas fa-folder-open"></i> Project</a
+            >
+            <a id="feedback" href="#" onclick="aktif(this)"
+                ><i class="fas fa-comments"></i> Feedback</a
+            >
+            <a id="contact" href="#" onclick="aktif(this)"
+                ><i class="fas fa-comments"></i> Contact</a
+            >
         </div>
-        <br>
-        <div class="item">
-          <img src="app.png" alt="none">
-          <h3>item 1</h3>
-          <p>Saya juga membuat aplikasi dengan antarmuka yang sederhana,
-    modern, dan mudah digunakan. Fokus utama saya adalah
-    menciptakan aplikasi yang stabil, cepat, dan membantu
-    kebutuhan pengguna secara efektif.</p>
-          <br>
-          <a href="#">Unduh File</a>
+        <br />
+        <section class="home">
+            <h2><i class="fas fa-home"></i> Selamat Datang Di NanszDev</h2>
+            <p>
+                Selamat datang di portofolio saya, portofolio ini berisi
+                beberapa proyek yang pernah saya kerjakan, mulai dari website
+                landing page, dashboard, UI modern, hingga sistem interaktif
+                berbasis web. Saya siap membantu mewujudkan ide digital menjadi
+                website yang menarik dan fungsional.
+            </p>
+            <br />
+            <div class="btn">
+                <a href="#" class="feed">Umpan balik</a>
+                <a href="#" class="myabout">Tentang saya</a>
+            </div>
+            <br />
+        </section>
+        <div id="mainContent" class="content">
+            <br />
+            <section class="about">
+                <h2><i class="fas fa-circle-info"></i> Tentang</h2>
+                <p>
+                    Halo, Nama saya Nanang Prayoga, saya adalah seorang
+                    pengembang web yang fokus membuat tampilan website modern,
+                    responsif, dan interaktif. Saya memiliki pengalaman dalam
+                    menggunakan HTML, CSS, JavaScript, serta berbagai teknologi
+                    frontend untuk menciptakan pengalaman pengguna yang nyaman
+                    dan menarik.
+                </p>
+                <p>
+                    Dalam setiap proyek, saya selalu mengutamakan desain yang
+                    bersih, performa yang optimal, dan detail visual yang
+                    profesional. Saya juga senang mempelajari teknologi baru
+                    untuk terus meningkatkan kualitas hasil kerja dan kemampuan
+                    pengembangan web.
+                </p>
+            </section>
+            <br />
+            <div class="skill">
+                <h2><i class="fas fa-cogs"></i> Kemampuan saya</h2>
+                <p>
+                    Saya memiliki kemampuan dalam pengembangan website
+                    menggunakan HTML, CSS, dan JavaScript untuk membuat tampilan
+                    modern, responsif, dan interaktif.
+                </p>
+                <div class="cardsave">
+                    <div class="card">
+                        <i
+                            class="fa-brands fa-html5"
+                            style="color: #ff4a4a"
+                        ></i>
+                        <p>
+                            HTML (HyperText Markup Language) adalah bahasa
+                            markah standar yang digunakan untuk membuat dan
+                            menyusun struktur sebuah halaman website
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i
+                            class="fa-brands fa-css3-alt"
+                            style="color: #4a5dff"
+                        ></i>
+                        <p>
+                            CSS (Cascading Style Sheets) adalah bahasa
+                            stylesheet yang digunakan untuk mendesain, mengatur
+                            gaya, dan mempercantik tampilan visual dokumen
+                            (seperti halaman web) yang ditulis dalam bahasa
+                            markup seperti HTML.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-brands fa-js" style="color: #ffe24a"></i>
+                        <p>
+                            JavaScript adalah bahasa pemrograman tingkat tinggi
+                            yang digunakan untuk membuat halaman web menjadi
+                            lebih dinamis dan interaktif
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <i
+                            class="fa-brands fa-python"
+                            style="color: #3776ab"
+                        ></i>
+                        <p>
+                            Python adalah bahasa pemrograman tingkat tinggi yang
+                            serbaguna, populer, dan mudah dipelajari. Dikenal
+                            karena sintaksnya yang bersih dan mirip bahasa
+                            manusia,
+                        </p>
+                    </div>
+                </div>
+                <br />
+                <section class="project">
+                    <h2><i class="fas fa-folder-open"></i> Proyek Saya</h2>
+                    <div class="contain">
+                        <div class="item">
+                            <img src="game.png" alt="none" />
+                            <h3>item 1</h3>
+                            <p>
+                                Saya membuat game dengan tampilan menarik dan
+                                gameplay interaktif menggunakan teknologi
+                                modern. Fokus saya adalah menciptakan pengalaman
+                                bermain yang seru, responsif, dan dapat
+                                dimainkan di berbagai perangkat.
+                            </p>
+                            <br />
+                            <a href="#">Unduh File</a>
+                        </div>
+                        <br />
+                        <div class="item">
+                            <img src="app.png" alt="none" />
+                            <h3>item 1</h3>
+                            <p>
+                                Saya juga membuat aplikasi dengan antarmuka yang
+                                sederhana, modern, dan mudah digunakan. Fokus
+                                utama saya adalah menciptakan aplikasi yang
+                                stabil, cepat, dan membantu kebutuhan pengguna
+                                secara efektif.
+                            </p>
+                            <br />
+                            <a href="#">Unduh File</a>
+                        </div>
+                        <br />
+                        <div class="item">
+                            <img src="web.png" alt="none" />
+                            <h3>item 1</h3>
+                            <p>
+                                Saya mengembangkan website modern, responsif,
+                                dan interaktif menggunakan HTML, CSS, dan
+                                JavaScript. Website dibuat dengan desain yang
+                                bersih, performa optimal, serta tampilan yang
+                                nyaman digunakan oleh pengguna.
+                            </p>
+                            <br />
+                            <a href="#">Unduh File</a>
+                        </div>
+                        <div class="item">
+                            <img src="assets.png" alt="none" />
+                            <h3>item 1</h3>
+                            <p>
+                                Saya membuat berbagai asset digital untuk
+                                kebutuhan game, website, dan aplikasi seperti
+                                ikon, ilustrasi, UI kit, background, tombol,
+                                hingga elemen visual lainnya.
+                            </p>
+                            <br />
+                            <a href="#">Unduh File</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-        <br>
-        <div class="item">
-          <img src="web.png" alt="none">
-          <h3>item 1</h3>
-          <p>Saya mengembangkan website modern, responsif, dan interaktif
-    menggunakan HTML, CSS, dan JavaScript. Website dibuat dengan
-    desain yang bersih, performa optimal, serta tampilan yang
-    nyaman digunakan oleh pengguna.</p>
-          <br>
-          <a href="#">Unduh File</a>
+        <div class="exit">
+            <section class="feedback">
+                <form action="https://formspree.io/f/maqkjrol" method="POST">
+                    <h2>Feedback</h2>
+                    <input
+                        type="text"
+                        name="Username"
+                        placeholder="Username"
+                        required
+                    />
+                    <p>ⓘ nama pengirim pesan harus diisi.</p>
+                    <input
+                        type="email"
+                        name="Email"
+                        placeholder="Email"
+                        required
+                    />
+                    <p>
+                        ⓘ isi bagian email agar bisa diketahui siapa yang kirim.
+                    </p>
+                    <textarea
+                        rows="8"
+                        cols="40"
+                        placeholder="Message"
+                        name="Message"
+                        required
+                    ></textarea>
+                    <p>
+                        ⓘ tulis pesan yang ingin anda sampaikan untuk developer
+                        web ini.
+                    </p>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <p>
+                    Saya terbuka untuk berbagai peluang seperti pengembangan
+                    website, pembuatan game, aplikasi, desain asset, maupun
+                    kolaborasi proyek lainnya.
+                </p>
+                <p>
+                    Saya akan berusaha merespons pesan secepat mungkin dan
+                    membantu memberikan solusi terbaik sesuai kebutuhan Anda.
+                </p>
+                <p>
+                    Jika Anda tertarik untuk bekerja sama, membuat proyek, atau
+                    memiliki pertanyaan seputar layanan yang saya sediakan,
+                    silakan hubungi saya melalui kontak yang tersedia.
+                </p>
+                <div class="medsos">
+                    <br />
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <br />
+                <p>©.Padang <span>2026</span>, NanszDev, github.io</p>
+            </section>
         </div>
-        <div class="item">
-          <img src="assets.png" alt="none">
-          <h3>item 1</h3>
-          <p>Saya membuat berbagai asset digital untuk kebutuhan game,
-    website, dan aplikasi seperti ikon, ilustrasi, UI kit,
-    background, tombol, hingga elemen visual lainnya.</p>
-          <br>
-          <a href="#">Unduh File</a>
-        </div>
-      </div>
-    </section>
-    </div>
-  </div>
-  <div class="exit">
-    <section class="feedback">
-        <form action="https://formspree.io/f/maqkjrol" method="POST">
-          <h2>Feedback</h2>
-          <input type="text" name="Username" placeholder="Username" required>
-          <p> ⓘ nama pengirim pesan harus diisi.</p>
-          <input type="email" name="Email" placeholder="Email" required>
-          <p> ⓘ isi bagian email agar bisa diketahui siapa yang kirim.</p>
-          <textarea rows="8" cols="40" placeholder="Message" name="Message" required></textarea>
-          <p> ⓘ tulis pesan yang ingin anda sampaikan untuk developer web ini.</p>
-          <button type="submit">Send Message</button>
-        </form>
-    </section>
-    <section class="contact">
-      <h2>Contact Us</h2>
-      <p>Saya terbuka untuk berbagai peluang seperti pengembangan website,
-    pembuatan game, aplikasi, desain asset, maupun kolaborasi proyek lainnya.</p>
-      <p>Saya akan berusaha merespons pesan secepat mungkin dan membantu
-    memberikan solusi terbaik sesuai kebutuhan Anda.</p>
-      <p>Jika Anda tertarik untuk bekerja sama, membuat proyek,
-    atau memiliki pertanyaan seputar layanan yang saya sediakan,
-    silakan hubungi saya melalui kontak yang tersedia.</p>
-      <div class="medsos">
-        <br>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-      <br>
-      <p>©.Padang <span>2026</span>, NanszDev, github.io</p>
-     </section>
-  </div>
-  <script src="main.js"></script>
-</body>
-</html>
+        <script src="main.js"></script>
+    </body>
+                              </html>
+                                  
