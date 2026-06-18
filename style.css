@@ -1,0 +1,311 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+  background: none fixed;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+#navbar {
+  padding: 2px 10px;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background: #182a3f;
+  z-index: 1000;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+}
+#navbar h3 {
+  color: white;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #eeeeee;
+  color: #fff;
+  transition: all 0.4s ease;
+  padding-top: 90px;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #bcbcbc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #bdd9d5;
+}
+
+.sidebar a i {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.menu-btn {
+  top: 15px;
+  left: 15px;
+  font-size: 22px;
+  cursor: pointer;
+  background: none;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.menu-btn:hover {
+  background: none;
+}
+.content {
+  padding: 20px;
+  margin-left: 0;
+}
+
+.sidebar a.activer {
+  border-radius: 10px;
+  color: #0072f4;
+}
+
+.home {
+  background: #152231;
+  padding: 50px 40px;
+  border-radius: 50% / 10%;
+  text-align: center;
+}
+.home h2 {
+  text-align: center;
+  color: #66c9ff;
+}
+.home p {
+  text-align: center;
+  color: #ceeeff;
+}
+.home .btn .feed {
+  color: #0093ff;
+  text-decoration: none;
+  border: 2px solid #0093ff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.home .btn .feed:hover {
+  color: #ffffff;
+  background: #0093ff;
+}
+.home .btn .myabout {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.home .btn .myabout:hover {
+  color: #000;
+  background: #fff;
+}
+
+.exit {
+  background: #0b2542;
+  height: 50%;
+  padding: 30px 30px;
+  text-align: center;
+}
+.contact h2 {
+  color: #fff;
+}
+.contact p {
+  color: #adadad;
+}
+.contact .medsos a {
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #fff;
+  margin: 5px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.content .about {
+  text-align: center;
+  padding: 20px 0;
+}
+.content .about h2 {
+  color: #4a90ff;
+}
+.content .about p {
+  color: #a1a1a1;
+}
+.content .skill {
+  text-align: center;
+}
+.content .skill h2 {
+  color: #4a90ff;
+}
+.content .skill p {
+  color: #a1a1a1;
+}
+.content .skill .card {
+  padding: 30px;
+}
+.content .skill .card i {
+  font-size: 50px;
+}
+.content .project h2 {
+  text-align: center;
+  color: #4a90ff;
+}
+.content .project .contain {
+  text-align: center;
+}
+.content .project .contain p {
+  color: #a1a1a1;
+}
+.content .project .contain img {
+  width: 120px;
+}
+.content .project .contain a {
+  color: #006cee;
+  text-align: center;
+  text-decoration: none;
+  background: #e6f0fc;
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.content .project .contain a:hover {
+  background: #006cee;
+  color: #e6f0fc;
+}
+.content .project .contain .item {
+  padding: 30px;
+}
+.feedback h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.feedback p {
+  color: #b8b8b8;
+}
+.feedback input,textarea {
+  font-family: "Urbanist", Sans-Serif;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.5s;
+  background: none;
+  color: white;
+}
+.feedback input::placeholder, textarea::placeholder {
+  color: #f7f7f7;
+}
+.feedback input:focus, textarea:focus {
+  border: 1px solid #0088ee;
+}
+.feedback button {
+  background: none;
+  border: 2px solid #0088ee;
+  padding: 10px;
+  width: 100%;
+  color: #0088ee;
+  font-family: "Urbanist", Sans-Serif;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.feedback button:hover {
+  color: #0b2542;
+  background: #0088ee;
+}
+
+@media (min-width: 1024px) {
+      .content {
+        max-width: 1000px; 
+        margin: 0 auto; 
+        background: white;
+      }
+      .home {
+        background: #152231;
+        margin: 0 auto;
+        padding: 50px 400px;
+        border-radius: 50% / 15%;
+      }
+      .cardsave {
+        display: flex;
+        color: #a1a1a1;
+        justify-content: space-between;
+      }
+      .contain {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+      }
+      .exit {
+        display: flex;
+        justify-content: space-between;
+      }
+      .contact {
+        padding: 80px;
+        width: 40%;
+      }
+      .feedback {
+        padding: 30px;
+        width: 40%;
+      }
+}
+@media screen and (min-width: 768px) {
+      .content {
+        margin: 0 auto; 
+        background: white;
+      }
+      .home {
+        background: #152231;
+        margin: 0 auto;
+        padding: 50px 200px;
+        border-radius: 50% / 15%;
+      }
+      .cardsave {
+        display: flex;
+        color: #a1a1a1;
+        justify-content: space-between;
+      }
+      .contain {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+      }
+      .exit {
+        display: flex;
+        justify-content: space-between;
+      }
+      .contact {
+        padding: 10px;
+        width: 50%;
+      }
+      .feedback {
+        padding: 10px;
+        width: 50%;
+      }
+}
